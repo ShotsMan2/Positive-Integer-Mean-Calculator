@@ -3,30 +3,31 @@
 
 int main()
 {
-            int sayi,i,array[999],index=0,sonuc,ort;
+    int sayi, i, array[999], index = 0, sonuc, ort;
 
-    ort=0;
+    ort = 0;
 
-
-    for(;;){
+    for (;;)
+    {
         printf("sayi girin");
-        scanf("%d",&sayi);
+        scanf("%d", &sayi);
 
-        if(sayi==-1){
+        if (sayi == -1)
+        {
             break;
         }
-        if(sayi>0){
-            array[index]=sayi;
+        if (sayi > 0)
+        {
+            array[index] = sayi;
             index++;
         }
-
     }
-    for(i=0;i<index;i++){
-        ort+=array[i];
+    for (i = 0; i < index; i++)
+    {
+        ort += array[i];
     }
-    sonuc=ort/index;
-    printf("sonuc: %d",sonuc);
-
+    sonuc = ort / index;
+    printf("sonuc: %d", sonuc);
 
     return 0;
 }
